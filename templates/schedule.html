@@ -1,0 +1,165 @@
+{% extends 'template.html' %}
+
+{% block content %}
+
+    <h1>Score de l'horaire : {{ schedule_score }}</h1>
+
+    <div class="alert alert-danger">
+        <h2>Conflits</h2>
+        {% for conflict in conflicts %}
+            <p>{{ conflict }}</p>
+        {% endfor %}
+    </div>
+
+    <div class="alert alert-danger">
+        <h2>Erreurs</h2>
+        {% for noob in noobs %}
+            <p>{{ noob.name }} a moins de 3 competitions</p>
+        {% endfor %}
+    </div>
+
+    <div class="alert alert-warning">
+        <h2>Avertissements</h2>
+        {% for warning in warnings %}
+            <p>{{ warning.participant.name }} est assignée à {{ warning.competition.name }} et elle ne figure pas dans ces preferences</p>
+        {% endfor %}
+    </div>
+
+    <div class="Schedule">
+        <div style="float:left;width:200px;">
+            <h2>Friday</h2>
+            <h3>Morning</h3>
+             {% for competition in competitions %}
+                {% if competition.date == 'Friday' %}
+                    {% if competition.time == 'Morning' %}
+                            <p>{{ competition.name }}</p>
+                            {% if competition.paricipant.all|length %}<p class="danger">Il manque de participants</p>{% endif %}
+                            <ul>
+                            {% for participant in competition.participants.all %}
+                                <li>{{ participant.name }}</li>
+                            {% endfor %}
+                            </ul>
+                     {% endif %}
+                {% endif %}
+             {% endfor %}
+            <h3>Afternoon</h3>
+             {% for competition in competitions %}
+                {% if competition.date == 'Friday' %}
+                    {% if competition.time == 'Afternoon' %}
+                            <p>{{ competition.name }}</p>
+                            {% if competition.paricipant.all|length %}<p class="danger">Il manque de participants</p>{% endif %}
+                            <ul>
+                            {% for participant in competition.participants.all %}
+                                <li>{{ participant.name }}</li>
+                            {% endfor %}
+                            </ul>
+                     {% endif %}
+                {% endif %}
+             {% endfor %}
+            <h3>Evening</h3>
+             {% for competition in competitions %}
+                {% if competition.date == 'Friday' %}
+                    {% if competition.time == 'Evening' %}
+                            <p>{{ competition.name }}</p>
+                            {% if competition.participants.all|length < 3 %}<p style="color:red;">Il manque de participants</p>{% endif %}
+                            <ul>
+                            {% for participant in competition.participants.all %}
+                                <li>{{ participant.name }}</li>
+                            {% endfor %}
+                            </ul>
+                     {% endif %}
+                {% endif %}
+             {% endfor %}
+        </div>
+        <div style="float:left;;width:200px;">
+            <h2>Saturday</h2>
+            <h3>Morning</h3>
+             {% for competition in competitions %}
+                {% if competition.date == 'Saturday' %}
+                    {% if competition.time == 'Morning' %}
+                            <p>{{ competition.name }}</p>
+                            {% if competition.participants.all|length < 3 %}<p style="color:red;">Il manque de participants</p>{% endif %}
+                            <ul>
+                            {% for participant in competition.participants.all %}
+                                <li>{{ participant.name }}</li>
+                            {% endfor %}
+                            </ul>
+                     {% endif %}
+                {% endif %}
+             {% endfor %}warnings
+            <h3>Afternoon</h3>
+             {% for competition in competitions %}
+                {% if competition.date == 'Saturday' %}
+                    {% if competition.time == 'Afternoon' %}
+                            <p>{{ competition.name }}</p>
+                            {% if competition.participants.all|length < 3 %}<p style="color:red;">Il manque de participants</p>{% endif %}
+                            <ul>
+                            {% for participant in competition.participants.all %}
+                                <li>{{ participant.name }}</li>
+                            {% endfor %}
+                            </ul>
+                     {% endif %}
+                {% endif %}
+             {% endfor %}
+            <h3>Evening</h3>
+             {% for competition in competitions %}
+                {% if competition.date == 'Saturday' %}
+                    {% if competition.time == 'Evening' %}
+                            <p>{{ competition.name }}</p>
+                            {% if competition.participants.all|length < 3 %}<p style="color:red;">Il manque de participants</p>{% endif %}
+                            <ul>
+                            {% for participant in competition.participants.all %}
+                                <li>{{ participant.name }}</li>
+                            {% endfor %}
+                            </ul>
+                     {% endif %}
+                {% endif %}
+             {% endfor %}
+        </div>
+        <div style="float:left;;width:200px;">
+            <h2>Sunday</h2>
+            <h3>Morning</h3>
+             {% for competition in competitions %}
+                {% if competition.date == 'Sunday' %}
+                    {% if competition.time == 'Morning' %}
+                            <p>{{ competition.name }}</p>
+                            {% if competition.participants.all|length < 3 %}<p style="color:red;">Il manque de participants</p>{% endif %}
+                            <ul>
+                            {% for participant in competition.participants.all %}
+                                <li>{{ participant.name }}</li>
+                            {% endfor %}
+                            </ul>
+                     {% endif %}
+                {% endif %}
+             {% endfor %}
+            <h3>Afternoon</h3>
+             {% for competition in competitions %}
+                {% if competition.date == 'Sunday' %}
+                    {% if competition.time == 'Afternoon' %}
+                            <p>{{ competition.name }}</p>
+                            {% if competition.participants.all|length < 3 %}<p style="color:red;">Il manque de participants</p>{% endif %}
+                            <ul>
+                            {% for participant in competition.participants.all %}
+                                <li>{{ participant.name }}</li>
+                            {% endfor %}
+                            </ul>
+                     {% endif %}
+                {% endif %}
+             {% endfor %}
+            <h3>Evening</h3>
+             {% for competition in competitions %}
+                {% if competition.date == 'Sunday' %}
+                    {% if competition.time == 'Evening' %}
+                            <p>{{ competition.name }}</p>
+                            {% if competition.participants.all|length < 3 %}<p style="color:red;">Il manque de participants</p>{% endif %}
+                            <ul>
+                            {% for participant in competition.participants.all %}
+                                <li>{{ participant.name }}</li>
+                            {% endfor %}
+                            </ul>
+                     {% endif %}
+                {% endif %}
+             {% endfor %}
+        </div>
+    </div>
+{% endblock %}

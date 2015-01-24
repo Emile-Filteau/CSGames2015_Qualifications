@@ -1,0 +1,43 @@
+{% extends 'template.html' %}
+
+{% block content %}
+
+    <div class="competition">
+
+        {% if warning and warning != '' %}
+            <div class="alert alert-warning">
+                {{ warning|safe }}
+            </div>
+        {% endif %}
+
+        <h2>{{ competition.name }}</h2>
+        <h3>{{ competition.date }} : {{ competition.time }}</h3>
+
+        <h3>Participants : </h3>
+        <p>
+            {% for participant in participants %}
+                <a href="{% url 'participant' participant.pk %}">{{ participant.name }}</a> <br/>
+            {% endfor %}
+        </p>
+        <h3>Il reste {{ n_places }} places</h3>
+
+        <h3>Participants ayant cette compétion comme préférence</h3>
+        {% for participant in pref_list %}
+            <a href="{% url 'participant' participant.id %}">{{ participant.name }}</a>
+        {% endfor %}
+    </div>
+
+    <div>
+        <h2>Assign/Unassign Participant to this competition</h2>
+
+        {% for participant in participants_list %}
+            {% if participant in participants %}
+            Remove :
+            {% else %}
+            Add :
+            {% endif %}
+            <a href="{% url 'assign' competition.pk participant.pk %}">{{ participant.name }}</a><br/>
+        {% endfor %}
+    </div>
+
+{% endblock %}

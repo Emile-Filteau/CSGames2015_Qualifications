@@ -1,0 +1,31 @@
+{% extends 'template.html' %}
+
+{% block content %}
+
+    <div class="participant">
+        <h2>{{ participant.name }}</h2>
+        <h3>Preferences : </h3>
+        <p>
+        {% for pref in preferences %}
+            {{ pref.name }} <br/>
+        {% endfor %}
+        </p>
+
+        <h3>Competitions : </h3>
+        <p>
+        {% for competition in competitions %}
+            <a href="{% url 'competition' competition.pk %}">{{ competition.name }}</a> <br/>
+        {% endfor %}
+        </p>
+
+        <h3>Préférences satisfaites</h3>
+        <p>
+            {% for competition in competitions %}
+                {% if competition in preferences %}
+                    <a href="{% url 'competition' competition.pk %}">{{ competition.name }}</a> <br/>
+                {% endif %}
+            {% endfor %}
+        </p>
+     </div>
+
+{% endblock %}

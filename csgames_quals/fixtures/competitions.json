@@ -1,0 +1,137 @@
+[
+    {
+        "model": "csgames_quals.Competition",
+        "pk": 1,
+        "fields": {
+          "name": "Scavenger hunt",
+          "date": "Friday",
+          "time": "Evening"
+        }
+    },
+    {
+        "model": "csgames_quals.Competition",
+        "pk": 2,
+        "fields": {
+          "name": "Embedded",
+          "date": "Friday",
+          "time": "Evening"
+        }
+    },
+    {
+        "model": "csgames_quals.Competition",
+        "pk": 3,
+        "fields": {
+          "name": "Artificial Intelligence",
+          "date": "Friday",
+          "time": "Evening"
+        }
+    },
+    {
+        "model": "csgames_quals.Competition",
+        "pk": 4,
+        "fields": {
+          "name": "Relay Programming",
+          "date": "Saturday",
+          "time": "Morning"
+        }
+    },
+    {
+        "model": "csgames_quals.Competition",
+        "pk": 5,
+        "fields": {
+          "name": "TCS",
+          "date": "Saturday",
+          "time": "Morning"
+        }
+    },
+    {
+        "model": "csgames_quals.Competition",
+        "pk": 6,
+        "fields": {
+          "name": "Operating System",
+          "date": "Saturday",
+          "time": "Morning"
+        }
+    },
+    {
+        "model": "csgames_quals.Competition",
+        "pk": 7,
+        "fields": {
+          "name": "Software Engineering",
+          "date": "Saturday",
+          "time": "Afternoon"
+        }
+    },
+    {
+        "model": "csgames_quals.Competition",
+        "pk": 8,
+        "fields": {
+          "name": "Machine learning",
+          "date": "Saturday",
+          "time": "Afternoon"
+        }
+    },
+    {
+        "model": "csgames_quals.Competition",
+        "pk": 9,
+        "fields": {
+          "name": "Web Development",
+          "date": "Saturday",
+          "time": "Afternoon"
+        }
+    },
+    {
+        "model": "csgames_quals.Competition",
+        "pk": 10,
+        "fields": {
+          "name": "Gaming",
+          "date": "Saturday",
+          "time": "Evening"
+        }
+    },
+    {
+        "model": "csgames_quals.Competition",
+        "pk": 11,
+        "fields": {
+          "name": "Parallelisme",
+          "date": "Saturday",
+          "time": "Evening"
+        }
+    },
+    {
+        "model": "csgames_quals.Competition",
+        "pk": 12,
+        "fields": {
+          "name": "Database",
+          "date": "Saturday",
+          "time": "Evening"
+        }
+    },
+    {
+        "model": "csgames_quals.Competition",
+        "pk": 13,
+        "fields": {
+          "name": "Sport",
+          "date": "Sunday",
+          "time": "Morning"
+        }
+    },
+    {
+        "model": "csgames_quals.Competition",
+        "pk": 14,
+        "fields": {
+          "name": "Corpo",
+          "date": "Sunday",
+          "time": "Morning"
+        }
+    },
+    {
+        "model": "csgames_quals.Competition",
+        "pk": 15,
+        "fields": {
+          "name": "Extreme Programming",
+          "date": "Sunday",
+          "time": "Morning"
+        }
+    }
+]

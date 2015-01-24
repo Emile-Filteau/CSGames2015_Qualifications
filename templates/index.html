@@ -1,0 +1,45 @@
+{% extends 'template.html' %}
+
+{% block content %}
+    <h1>View the full schedule <a href="{% url 'schedule' %}">here</a></h1>
+    <div class="participants">
+        <h2>Participants</h2>
+        <table class="table">
+            <thead>
+                <td>#</td>
+                <td>Name</td>
+                <td>#Competitions</td>
+                <td>Score</td>
+            </thead>
+            {% for participant in participants %}
+                <tr>
+                    <td>{{ participant.pk }}</td>
+                    <td><a href="{% url 'participant' participant.pk %}">{{ participant.name }}</a></td>
+                    <td>{{ participant.competitions.all|length }}</td>
+                    <td>{{ participant.score }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <div class="competitions">
+        <h2>Competitions</h2>
+        <table class="table">
+            <thead>
+                <td>#</td>
+                <td>Name</td>
+                <td>Date</td>
+                <td>Time</td>
+            </thead>
+            {% for competition in competitions %}
+                <tr>
+                    <td>{{ competition.pk }}</td>
+                    <td><a href="{% url 'competition' competition.pk %}" >{{ competition.name }}</a></td>
+                    <td>{{ competition.date }}</td>
+                    <td>{{ competition.time }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+{% endblock %}
