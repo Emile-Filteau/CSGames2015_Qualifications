@@ -127,7 +127,7 @@
     },
     {
         "model": "csgames_quals.Competition",
-        "pk": 15,
+        "pk": 1,
         "fields": {
           "name": "Extreme Programming",
           "date": "Sunday",

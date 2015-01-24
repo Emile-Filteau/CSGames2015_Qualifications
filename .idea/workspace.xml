@@ -23,13 +23,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csgames_quals/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="18" selection-start="3832" selection-end="3846" vertical-scroll-proportion="2.5075376" vertical-offset="159" max-vertical-offset="1962">
+            <state line="92" column="18" selection-start="3832" selection-end="3846" vertical-scroll-proportion="0.0" vertical-offset="159" max-vertical-offset="1962">
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="participants.json" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/csgames_quals/fixtures/participants.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="80" column="5" selection-start="2083" selection-end="2083" vertical-scroll-proportion="2.4699829" vertical-offset="0" max-vertical-offset="1566">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,16 +81,16 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/csgames_quals/settings.py" />
-        <option value="$PROJECT_DIR$/csgames_quals/fixtures/competitions.json" />
         <option value="$PROJECT_DIR$/csgames_quals/models.py" />
         <option value="$PROJECT_DIR$/templates/participant.html" />
-        <option value="$PROJECT_DIR$/csgames_quals/fixtures/participants.json" />
         <option value="$PROJECT_DIR$/templates/template.html" />
         <option value="$PROJECT_DIR$/csgames_quals/urls.py" />
         <option value="$PROJECT_DIR$/templates/competition.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/csgames_quals/views.py" />
         <option value="$PROJECT_DIR$/templates/schedule.html" />
+        <option value="$PROJECT_DIR$/csgames_quals/fixtures/participants.json" />
+        <option value="$PROJECT_DIR$/csgames_quals/fixtures/competitions.json" />
       </list>
     </option>
   </component>
@@ -133,20 +142,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="csgames_quals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csgames_quals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csgames_quals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -416,7 +411,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -424,7 +419,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -455,23 +450,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/csgames_quals/fixtures/participants.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="18" selection-start="232" selection-end="232" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="1584">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/participant.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="12" selection-start="790" selection-end="790" vertical-scroll-proportion="-14.925926" vertical-offset="65" max-vertical-offset="648">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csgames_quals/fixtures/competitions.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="26" selection-start="1975" selection-end="1982" vertical-scroll-proportion="0.40137222" vertical-offset="1350" max-vertical-offset="2556">
           <folding />
         </state>
       </provider>
@@ -529,10 +510,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/csgames_quals/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="18" selection-start="3832" selection-end="3846" vertical-scroll-proportion="2.5075376" vertical-offset="159" max-vertical-offset="1962">
+        <state line="92" column="18" selection-start="3832" selection-end="3846" vertical-scroll-proportion="0.0" vertical-offset="159" max-vertical-offset="1962">
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csgames_quals/fixtures/competitions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="19" selection-start="2090" selection-end="2090" vertical-scroll-proportion="-32.666668" vertical-offset="810" max-vertical-offset="2556">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csgames_quals/fixtures/participants.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="5" selection-start="2083" selection-end="2083" vertical-scroll-proportion="2.4699829" vertical-offset="0" max-vertical-offset="1566">
+          <folding />
         </state>
       </provider>
     </entry>
