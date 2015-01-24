@@ -14,15 +14,15 @@ To generate database :
 
 To import fixtures to database :
 ```
-./manage loaddata competitions
+./manage.py loaddata competitions
 ```
 ```
-./manage loaddata participants
+./manage.py loaddata participants
 ```
 
 To run server (on port 8000)
 ```
-./manage runserver
+./manage.py runserver
 ```
 
 ENJOY
