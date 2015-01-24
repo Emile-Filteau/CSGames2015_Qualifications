@@ -37,7 +37,7 @@
       <file leaf-file-name="participants.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/csgames_quals/fixtures/participants.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="5" selection-start="2083" selection-end="2083" vertical-scroll-proportion="2.4699829" vertical-offset="0" max-vertical-offset="1566">
+            <state line="8" column="6" selection-start="207" selection-end="207" vertical-scroll-proportion="-1.439108" vertical-offset="983" max-vertical-offset="1566">
               <folding />
             </state>
           </provider>
@@ -89,8 +89,8 @@
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/csgames_quals/views.py" />
         <option value="$PROJECT_DIR$/templates/schedule.html" />
-        <option value="$PROJECT_DIR$/csgames_quals/fixtures/participants.json" />
         <option value="$PROJECT_DIR$/csgames_quals/fixtures/competitions.json" />
+        <option value="$PROJECT_DIR$/csgames_quals/fixtures/participants.json" />
       </list>
     </option>
   </component>
@@ -526,7 +526,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/csgames_quals/fixtures/participants.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="5" selection-start="2083" selection-end="2083" vertical-scroll-proportion="2.4699829" vertical-offset="0" max-vertical-offset="1566">
+        <state line="8" column="6" selection-start="207" selection-end="207" vertical-scroll-proportion="-1.439108" vertical-offset="983" max-vertical-offset="1566">
           <folding />
         </state>
       </provider>

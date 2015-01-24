@@ -2,6 +2,11 @@
 
 ### J'ai toute faite... sauf le niveau programaticien... ###
 
+If you want to fulsh db run :
+```
+rm db.sqlite3
+```
+
 To install requirements : 
 ```
 pip install -r requirements.txt
